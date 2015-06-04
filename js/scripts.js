@@ -29,7 +29,9 @@ if(navigator.geolocation){
           //hooks into page one image
           $('#page1 div.weather-image').text("image");
 
-          $('#page3 h2.city').text("this is working");
+          $('#page3 b').text(weather.temp + weather.units.temp);
+
+          
     
         
       },
