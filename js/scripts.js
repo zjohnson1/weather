@@ -3,7 +3,7 @@
 
 
 
- var loadWeather = function(location) { 
+ var loadWeather = function() { 
   $.simpleWeather({
 
       //create function called testResults which take in a div takes the form in the div
@@ -16,7 +16,7 @@
       
 
       
-      location: location,
+      location: 'Austin, TX',
       
       
       success: function(weather) {
