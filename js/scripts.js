@@ -9,6 +9,7 @@ if(navigator.geolocation){
         loadWeather(location);
 
     });
+}
 
 
 //weather function
