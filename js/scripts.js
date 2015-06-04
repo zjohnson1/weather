@@ -1,17 +1,7 @@
 
 
-//hooks into page one title
-$('#page1 h2').text("zackary");
-
-//hooks into page one temp
-$('#page1 b').text("this is the temp");
-
-//hooks into page one image
-$('#page1 div.weather-image').text("image");
 
 
-
-/*
 if (navigator.geolocation) {
     // Yes! Show button
     $('.getGeolocation').show(); 
@@ -30,8 +20,6 @@ $('.getGeolocation').on('click', function() {
   });
   
 });
- 
-  
 
  var loadWeather = function(location) { 
   $.simpleWeather({
@@ -42,15 +30,28 @@ $('.getGeolocation').on('click', function() {
 
         var zip = div.input.value;
       
-      }
-      $('#page1.city').text("zackary");
+      }*/
+      
 
       
       location: location,
       
       
       success: function(weather) {
-        //hide all of my icon
+        //hide all of my icons
+        
+
+        //hooks into page one title
+        $('#page1 h2').text("zackary");
+
+        //hooks into page one temp
+        $('#page1 b').text("this is the temp");
+
+        //hooks into page one image
+        $('#page1 div.weather-image').text("image");
+
+        
+
         console.log(weather);
 
       },
@@ -61,14 +62,3 @@ $('.getGeolocation').on('click', function() {
       
     });
   };
-
-
-*/
-
-
-
-
-
-
-
-
