@@ -53,7 +53,7 @@ if(navigator.geolocation){
       }
   });
   $.simpleWeather({
-      location: location,
+      location: 'Omaha NE',
       woeid: '',
       unit: 'f',
       success: function(weather) {
