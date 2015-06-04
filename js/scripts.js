@@ -5,13 +5,16 @@ if(navigator.geolocation){
         var location = position.coords.latitude+','+position.coords.longitude; 
         // See latitute & longitude. Note, wait a few seconds
         console.log(location); 
+
+        loadWeather(location);
+
     });
 } 
 
 //weather function
   var loadWeather = function(location){
     $.simpleWeather({
-      location: 'Austin, TX',
+      location: location,
       woeid: '',
       unit: 'f',
       success: function(weather) {
