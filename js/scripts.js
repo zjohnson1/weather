@@ -7,7 +7,7 @@ $.simpleWeather({
     unit: 'f',
     success: function(weather) {
         
-        $('#page1 h2').text("zackary");
+        $('#page1 h2').text(weather.city + ', ' + weather.region);
 
         //hooks into page one temp
         $('#page1 b').text("this is the temp");
