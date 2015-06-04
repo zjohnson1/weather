@@ -34,7 +34,7 @@ if(navigator.geolocation){
       }
   });
   $.simpleWeather({
-      location: 'Austin TX',
+      location: 'Seattle WA',
       woeid: '',
       unit: 'f',
       success: function(weather) {
