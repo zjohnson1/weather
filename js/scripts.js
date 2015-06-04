@@ -5,7 +5,7 @@ if(navigator.geolocation){
         var location = position.coords.latitude+','+position.coords.longitude; 
         // See latitute & longitude. Note, wait a few seconds
         console.log(location); 
-    } 
+    });
 } 
 
 //weather function
