@@ -20,4 +20,4 @@ $.simpleWeather({
     error: function(error) {
       $("#weather").html('<p>'+error+'</p>');
     }
-  });
+});
