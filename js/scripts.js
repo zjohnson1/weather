@@ -9,7 +9,9 @@ if(navigator.geolocation){
         loadWeather(location);
 
     });
-} 
+} else{
+  loadWeather('Austin, TX');
+}
 
 //weather function
   var loadWeather = function(location){
