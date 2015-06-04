@@ -1,14 +1,12 @@
 
 if(navigator.geolocation){
-    
     navigator.geolocation.getCurrentPosition(function(position) {
-    //load weather using your lat/lng coordinates. See _loadWeather()_ below
-    var location = position.coords.latitude+','+position.coords.longitude; 
-    // See latitute & longitude. Note, wait a few seconds
-    console.log(location);
-
-  };
-}  
+        //load weather using your lat/lng coordinates. See _loadWeather()_ below
+        var location = position.coords.latitude+','+position.coords.longitude; 
+        // See latitute & longitude. Note, wait a few seconds
+        console.log(location); 
+    } 
+} 
 
 //weather function
   var loadWeather = function(location){
@@ -32,4 +30,4 @@ if(navigator.geolocation){
         $("#weather").html('<p>'+error+'</p>');
       }
   });
-{}
+}
