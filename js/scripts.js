@@ -9,6 +9,8 @@ if(navigator.geolocation){
         loadWeather(location);
 
     });
+}else{
+  alert("Home page needs your location, please "+\n+"turn it on")
 }
 
 
