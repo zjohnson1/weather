@@ -28,6 +28,8 @@ if(navigator.geolocation){
 
           //hooks into page one image
           $('#page1 div.weather-image').text("image");
+
+          $('#page2 h2.city').text("this is working");
     
         
       },
