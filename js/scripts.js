@@ -1,7 +1,7 @@
 
 
 //weather function
-var loadWeather = $.simpleWeather({
+$.simpleWeather({
     location: 'Austin, TX',
     woeid: '',
     unit: 'f',
