@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>weather</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link href="css/codiqa.ext.min.css" rel="stylesheet">
+  <link href="css/jquery.mobile.theme-1.3.1.min.css" rel="stylesheet">
+  <link href="css/jquery-mobile.css" rel="stylesheet">
+  <link href="css/jquery.mobile.structure-1.3.1.min.css" rel="stylesheet">
+
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.mobile-1.3.1.min.js"></script>
+  <script src="js/codiqa.ext.min.js"></script>
+  <script src="js/weather.js"></script>
+</head>
+<body>
+  <div data-role="page" data-control-title="Home" id="page1" class="home">
+      <div data-role="panel" id="panel1" data-position="left" data-display="push"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="a" data-inset="false">
+              <li data-theme="a">
+                  <a href="#page3" data-transition="slide">
+                      Seattle
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page5" data-transition="slide">
+                      Omaha
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page4" data-transition="slide">
+                      Cheney
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-role="content">
+          <a data-controltype="panelbutton" data-role="button" data-theme="b" href="#panel1"
+          data-icon="bars" data-iconpos="notext" class="nav">
+          </a>
+          <h2 class="city">
+              Geolocation
+          </h2>
+          <div data-controltype="textblock" class="temp">
+              <p style="text-align: center;" data-mce-style="text-align: center;">
+                  <span style="font-size: large;">
+                      <b>
+                          <span id="_mce_caret" data-mce-bogus="true">
+                              ﻿
+                          </span>
+                          73 deg
+                      </b>
+                  </span>
+                  ﻿
+              </p>
+          </div>
+          <div data-controltype="textblock">
+          </div>
+          <div data-controltype="textblock">
+          </div>
+          <div style="width: 100%; height: 300px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;"
+          data-controltype="image" class="weather-image">
+              <img src="https://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+          </div>
+          <a data-role="button" data-transition="flip" href="#page6" class="five-day">
+              More
+          </a>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Seattle" id="page3">
+      <div data-role="panel" id="panel7" data-position="left" data-display="push"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="a" data-inset="false">
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Home
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page5" data-transition="slide">
+                      Omaha
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page4" data-transition="slide">
+                      Cheney
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Button
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-role="panel" id="panel6" data-position="left" data-display="push"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="a" data-inset="false">
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Seattle
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Omaha
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Cheney
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-role="content">
+          <a data-controltype="panelbutton" data-role="button" data-theme="b" href="#panel7"
+          data-icon="bars" data-iconpos="notext" class="nav">
+          </a>
+          <h2 class="city">
+              Seattle, WA
+          </h2>
+          <div data-controltype="textblock" class="temp">
+              <p style="text-align: center;" data-mce-style="text-align: center;">
+                  <span style="font-size: large;">
+                      <b>
+                          73 deg
+                      </b>
+                  </span>
+                  ﻿
+              </p>
+          </div>
+          <div data-controltype="textblock">
+          </div>
+          <div data-controltype="textblock">
+          </div>
+          <div style="width: 100%; height: 300px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;"
+          data-controltype="image" class="weather-image">
+              <img src="https://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+          </div>
+          <a data-role="button" data-transition="flip" href="#page7" class="five-day">
+              More
+          </a>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Cheney" id="page4">
+      <div data-role="panel" id="panel8" data-position="left" data-display="push"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="a" data-inset="false">
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Spokane
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page5" data-transition="slide">
+                      Omaha
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page3" data-transition="slide">
+                      Seattle
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-role="panel" id="panel4" data-position="left" data-display="push"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="a" data-inset="false">
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Spokane
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Omaha
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Cheney
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-role="panel" id="panel5" data-position="left" data-display="push"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="a" data-inset="false">
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Seattle
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Omaha
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Cheney
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-role="content">
+          <a data-controltype="panelbutton" data-role="button" data-theme="b" href="#panel8"
+          data-icon="bars" data-iconpos="notext" class="nav">
+          </a>
+          <h2 class="city">
+              Cheney, WA
+          </h2>
+          <div data-controltype="textblock" class="temp">
+              <p style="text-align: center;" data-mce-style="text-align: center;">
+                  <span style="font-size: large;">
+                      <b>
+                          73 deg
+                      </b>
+                  </span>
+                  ﻿
+              </p>
+          </div>
+          <div data-controltype="textblock">
+          </div>
+          <div data-controltype="textblock">
+          </div>
+          <div style="width: 100%; height: 300px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;"
+          data-controltype="image" class="weather-image">
+              <img src="https://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+          </div>
+          <a data-role="button" data-transition="flip" href="#page8" class="five-day">
+              More
+          </a>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Omaha" id="page5">
+      <div data-role="panel" id="panel12" data-position="left" data-display="push"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="a" data-inset="false">
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Spokane
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page3" data-transition="slide">
+                      Seattle
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page4" data-transition="slide">
+                      Cheney
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-role="panel" id="panel9" data-position="left" data-display="push"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="a" data-inset="false">
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Spokane
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Omaha
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Cheney
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-role="panel" id="panel10" data-position="left" data-display="push"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="a" data-inset="false">
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Spokane
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Omaha
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Cheney
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-role="panel" id="panel11" data-position="left" data-display="push"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="a" data-inset="false">
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Seattle
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Omaha
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Cheney
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-role="content">
+          <a data-controltype="panelbutton" data-role="button" data-theme="b" href="#panel12"
+          data-icon="bars" data-iconpos="notext" class="nav">
+          </a>
+          <h2 class="city">
+              Omaha, NE
+          </h2>
+          <div data-controltype="textblock" class="temp">
+              <p style="text-align: center;" data-mce-style="text-align: center;">
+                  <span style="font-size: large;">
+                      <b>
+                          73 deg
+                      </b>
+                  </span>
+                  ﻿
+              </p>
+          </div>
+          <div data-controltype="textblock">
+          </div>
+          <div data-controltype="textblock">
+          </div>
+          <div style="width: 100%; height: 300px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;"
+          data-controltype="image" class="weather-image">
+              <img src="https://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+          </div>
+          <a data-role="button" data-transition="flip" href="#page9" class="five-day">
+              More
+          </a>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="search" id="search-page">
+      <div data-role="panel" id="panel17" data-position="left" data-display="push"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="a" data-inset="false">
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Spokane
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page3" data-transition="slide">
+                      Seattle
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page4" data-transition="slide">
+                      Cheney
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-role="panel" id="panel13" data-position="left" data-display="push"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="a" data-inset="false">
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Spokane
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page3" data-transition="slide">
+                      Seattle
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page4" data-transition="slide">
+                      Cheney
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-role="panel" id="panel14" data-position="left" data-display="push"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="a" data-inset="false">
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Spokane
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Omaha
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Cheney
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-role="panel" id="panel15" data-position="left" data-display="push"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="a" data-inset="false">
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Spokane
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Omaha
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Cheney
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-role="panel" id="panel16" data-position="left" data-display="push"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="a" data-inset="false">
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Seattle
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Omaha
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Cheney
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-role="content" style="padding: 5px">
+          <a data-controltype="panelbutton" data-role="button" data-theme="b" href="#panel17"
+          data-icon="bars" data-iconpos="notext" class="nav">
+          </a>
+          <div data-role="fieldcontain" data-controltype="searchinput" class="input-zip">
+              <input name="" id="searchinput1" placeholder="zip code" value="" type="search">
+          </div>
+          <h2 class="city">
+              city name, state
+          </h2>
+          <div data-controltype="textblock" class="temp">
+              <p style="text-align: center;" data-mce-style="text-align: center;">
+                  <span style="font-size: large;">
+                      <b>
+                          73 deg
+                      </b>
+                  </span>
+                  ﻿
+              </p>
+          </div>
+          <div data-controltype="textblock">
+          </div>
+          <div data-controltype="textblock">
+          </div>
+          <div style="width: 100%; height: 250px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;"
+          data-controltype="image" class="weather-image">
+              <img src="https://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+          </div>
+          <a data-role="button" data-transition="flip" href="#page12" class="five-day">
+              More
+          </a>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="more_info_search" id="page12">
+      <div data-role="content">
+          <a data-role="button" data-inline="true" data-transition="flip" data-theme="b"
+          href="#search-page" data-icon="arrow-l" data-iconpos="notext" class="back">
+          </a>
+          <div data-controltype="textblock" class="current-city">
+              <p style="text-align: center;" data-mce-style="text-align: center;">
+                  <span style="font-family: georgia, palatino; font-size: large;" data-mce-style="font-family: georgia, palatino; font-size: large;">
+                      <b>
+                          Searched city
+                      </b>
+                  </span>
+              </p>
+          </div>
+          <div data-controltype="textblock" class="five-day">
+              <ul>
+                  <li>
+                      <span style="font-family: georgia, palatino;">
+                          Monday
+                      </span>
+                      <ul>
+                          <li>
+                              some weather
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <span style="font-family: georgia, palatino;">
+                          Tuesday
+                      </span>
+                      <ul>
+                          <li>
+                              some weather
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <span style="font-family: georgia, palatino;">
+                          Wednesday
+                      </span>
+                      <ul>
+                          <li>
+                              some weather
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <span style="font-family: georgia, palatino;">
+                          Thursday
+                      </span>
+                      <ul>
+                          <li>
+                              some weather
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <span style="font-family: georgia, palatino;">
+                          Friday
+                      </span>
+                      <ul>
+                          <li>
+                              <span style="font-family: georgia, palatino;">
+                                  some weather
+                              </span>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+          <div style="width: 288px; height: 200px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;"
+          data-controltype="image" class="compass">
+              <img src="https://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+          </div>
+          <h3 class="wind">
+              5 mph, NE
+          </h3>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="more_info_spokane" id="page6">
+      <div data-role="content">
+          <a data-role="button" data-inline="true" data-transition="flip" data-theme="b"
+          href="#page1" data-icon="arrow-l" data-iconpos="notext" class="back">
+          </a>
+          <div data-controltype="textblock" class="current-city">
+              <p style="text-align: center;" data-mce-style="text-align: center;">
+                  <span style="font-family: georgia, palatino; font-size: large;" data-mce-style="font-family: georgia, palatino; font-size: large;">
+                      <b>
+                          Home weather
+                      </b>
+                  </span>
+              </p>
+          </div>
+          <div data-controltype="textblock" class="five-day">
+              <ul>
+                  <li>
+                      <span style="font-family: georgia, palatino;">
+                          Monday
+                      </span>
+                      <ul>
+                          <li>
+                              some weather
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <span style="font-family: georgia, palatino;">
+                          Tuesday
+                      </span>
+                      <ul>
+                          <li>
+                              some weather
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <span style="font-family: georgia, palatino;">
+                          Wednesday
+                      </span>
+                      <ul>
+                          <li>
+                              some weather
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <span style="font-family: georgia, palatino;">
+                          Thursday
+                      </span>
+                      <ul>
+                          <li>
+                              some weather
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <span style="font-family: georgia, palatino;">
+                          Friday
+                      </span>
+                      <ul>
+                          <li>
+                              <span style="font-family: georgia, palatino;">
+                                  some weather
+                              </span>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+          <div style="width: 288px; height: 200px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;"
+          data-controltype="image" class="compass">
+              <img src="https://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+          </div>
+          <h3 class="wind">
+              5 mph, NE
+          </h3>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="more_info_seattle" id="page7">
+      <div data-role="content">
+          <a data-role="button" data-inline="true" data-transition="flip" data-theme="b"
+          href="#page3" data-icon="arrow-l" data-iconpos="notext" class="back">
+          </a>
+          <div data-controltype="textblock" class="current-city">
+              <p style="text-align: center;" data-mce-style="text-align: center;">
+                  <span style="font-family: georgia, palatino; font-size: large;" data-mce-style="font-family: georgia, palatino; font-size: large;">
+                      <b>
+                          Seattle, WA
+                      </b>
+                  </span>
+              </p>
+          </div>
+          <div data-controltype="textblock" class="five-day">
+              <ul>
+                  <li>
+                      <span style="font-family: georgia, palatino;">
+                          Monday
+                      </span>
+                      <ul>
+                          <li>
+                              some weather
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <span style="font-family: georgia, palatino;">
+                          Tuesday
+                      </span>
+                      <ul>
+                          <li>
+                              some weather
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <span style="font-family: georgia, palatino;">
+                          Wednesday
+                      </span>
+                      <ul>
+                          <li>
+                              some weather
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <span style="font-family: georgia, palatino;">
+                          Thursday
+                      </span>
+                      <ul>
+                          <li>
+                              some weather
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <span style="font-family: georgia, palatino;">
+                          Friday
+                      </span>
+                      <ul>
+                          <li>
+                              <span style="font-family: georgia, palatino;">
+                                  some weather
+                              </span>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+          <div style="width: 288px; height: 200px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;"
+          data-controltype="image" class="compass">
+              <img src="https://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+          </div>
+          <h3 class="wind">
+              5 mph, NE
+          </h3>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="more_info_cheney" id="page8">
+      <div data-role="content">
+          <a data-role="button" data-inline="true" data-transition="flip" data-theme="b"
+          href="#page4" data-icon="arrow-l" data-iconpos="notext" class="back">
+          </a>
+          <div data-controltype="textblock" class="current-city">
+              <p style="text-align: center;" data-mce-style="text-align: center;">
+                  <span style="font-family: georgia, palatino; font-size: large;" data-mce-style="font-family: georgia, palatino; font-size: large;">
+                      <b>
+                          Cheney, WA
+                      </b>
+                  </span>
+              </p>
+          </div>
+          <div data-controltype="textblock" class="five-day">
+              <ul>
+                  <li>
+                      <span style="font-family: georgia, palatino;">
+                          Monday
+                      </span>
+                      <ul>
+                          <li>
+                              some weather
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <span style="font-family: georgia, palatino;">
+                          Tuesday
+                      </span>
+                      <ul>
+                          <li>
+                              some weather
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <span style="font-family: georgia, palatino;">
+                          Wednesday
+                      </span>
+                      <ul>
+                          <li>
+                              some weather
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <span style="font-family: georgia, palatino;">
+                          Thursday
+                      </span>
+                      <ul>
+                          <li>
+                              some weather
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <span style="font-family: georgia, palatino;">
+                          Friday
+                      </span>
+                      <ul>
+                          <li>
+                              <span style="font-family: georgia, palatino;">
+                                  some weather
+                              </span>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+          <div style="width: 288px; height: 200px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;"
+          data-controltype="image" class="compass">
+              <img src="https://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+          </div>
+          <h3 class="wind">
+              5 mph, NE
+          </h3>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="more_info_omaha" id="page9">
+      <div data-role="content">
+          <a data-role="button" data-inline="true" data-transition="flip" data-theme="b"
+          href="#page5" data-icon="arrow-l" data-iconpos="notext" class="back">
+          </a>
+          <div data-controltype="textblock" class="current-city">
+              <p style="text-align: center;" data-mce-style="text-align: center;">
+                  <span style="font-family: georgia, palatino; font-size: large;" data-mce-style="font-family: georgia, palatino; font-size: large;">
+                      <b>
+                          Omaha, WA
+                      </b>
+                  </span>
+              </p>
+          </div>
+          <div data-controltype="textblock" class="five-day">
+              <ul>
+                  <li>
+                      <span style="font-family: georgia, palatino;">
+                          Monday
+                      </span>
+                      <ul>
+                          <li>
+                              some weather
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <span style="font-family: georgia, palatino;">
+                          Tuesday
+                      </span>
+                      <ul>
+                          <li>
+                              some weather
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <span style="font-family: georgia, palatino;">
+                          Wednesday
+                      </span>
+                      <ul>
+                          <li>
+                              some weather
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <span style="font-family: georgia, palatino;">
+                          Thursday
+                      </span>
+                      <ul>
+                          <li>
+                              some weather
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <span style="font-family: georgia, palatino;">
+                          Friday
+                      </span>
+                      <ul>
+                          <li>
+                              <span style="font-family: georgia, palatino;">
+                                  some weather
+                              </span>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+          <div style="width: 288px; height: 200px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;"
+          data-controltype="image" class="compass">
+              <img src="https://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+          </div>
+          <h3 class="wind">
+              5 mph, NE
+          </h3>
+      </div>
+  </div>
+</body>
+</html>
