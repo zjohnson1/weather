@@ -52,4 +52,23 @@ if(navigator.geolocation){
         $("#weather").html('<p>'+error+'</p>');
       }
   });
+  $.simpleWeather({
+      location: location,
+      woeid: '',
+      unit: 'f',
+      success: function(weather) {
+          
+          $('#page5 h2').text(weather.city + ', ' + weather.region);
+
+          //hooks into page one temp
+          $('#page5 b').text(weather.temp + weather.units.temp);
+
+          //hooks into page one image
+          $('#page5 div.weather-image').text("image");
+
+      },
+      error: function(error) {
+        $("#weather").html('<p>'+error+'</p>');
+      }
+  });
 }
