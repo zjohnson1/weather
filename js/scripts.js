@@ -10,7 +10,7 @@ if(navigator.geolocation){
 
     });
 }else{
-  alert("Home page needs your location, please "+\n+"turn it on")
+  alert("Home page needs your location, please "+\n+"turn it on");
 }
 
 
