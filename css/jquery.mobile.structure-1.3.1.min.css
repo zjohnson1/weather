@@ -8,12 +8,3 @@
 
 }
 
-#page5 > .ui-content{
-	background: url(images/omaha.jpg);
-	background-repeat: no-repeat;
-}
-
-#page4 > .ui-content{
-	background: url(images/cheney.jpg);
-	background-repeat: no-repeat;
-}
