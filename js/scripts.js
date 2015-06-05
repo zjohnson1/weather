@@ -31,7 +31,7 @@ if(navigator.geolocation){
           //hooks into page one image
           $('#page1 div.weather-image').text("image");
 
-          $('#page1 div.weather-image')append("<img id='theImg' src='css/images/10.svg'/>");
+          $('#page1 div.weather-image').append("<img id='theImg' src='css/images/10.svg'/>");
 
       },
       error: function(error) {
