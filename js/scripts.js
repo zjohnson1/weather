@@ -29,7 +29,7 @@ if(navigator.geolocation){
           $('#page1 b').text(weather.temp + weather.units.temp);
 
           //hooks into page one image
-          $('#page1 div.weather-image').append("<img id='theImg' style='height: 100%, center' src='css/images/10.svg'/>");
+          $('#page1 div.weather-image').append("<img id='theImg' style='height: 100%; text-align:center' src='css/images/10.svg'/>");
 
       },
       error: function(error) {
