@@ -31,6 +31,8 @@ if(navigator.geolocation){
           //hooks into page one image
           $('#page1 div.weather-image').text("image");
 
+          $('#page1 div.weather-image')append("<img id='theImg' src='css/images/10.svg'/>");
+
       },
       error: function(error) {
         $("#weather").html('<p>'+error+'</p>');
@@ -88,9 +90,30 @@ if(navigator.geolocation){
           //hooks into page one image
           $('#page4 div.weather-image').text("image");
 
+
       },
       error: function(error) {
         $("#weather").html('<p>'+error+'</p>');
       }
   });
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
