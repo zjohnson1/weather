@@ -10,7 +10,8 @@ if(navigator.geolocation){
 
     });
 }else{
-  var zip = prompt()
+  var zip = prompt("Please enter a zip", "zip code");
+  loadWeather(zip);
 }
 
 
