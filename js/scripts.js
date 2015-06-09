@@ -30,7 +30,7 @@ if(navigator.geolocation){
           $('#page1 b').text(weather.temp + weather.units.temp);
 
           //give var wCode the right image with code
-          if(weather.)
+
 
           //hooks into page one image
           $('#page1 div.weather-image').append("<img id='theImg' style='height: 100%; width: 100%; position:absolute' src='"+weather.image+"'/>");
