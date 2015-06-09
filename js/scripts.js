@@ -45,7 +45,7 @@ if(navigator.geolocation){
 
 
           //hooks into page one image
-          $('#page1 div.weather-image').append("<img id='theImg' style='height: 100%; width: 100%; position:absolute; left: 55px; top: 55px' src='"+wCode+"'/>");
+          $('#page1 div.weather-image').append("<img id='theImg' style='height: 100%; width: 100%; position:absolute; top:5px' src='"+wCode+"'/>");
 
       },
       error: function(error) {
