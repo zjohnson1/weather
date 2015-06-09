@@ -118,7 +118,7 @@ if(navigator.geolocation){
           }
 
           //hooks into page one image
-        $('#page5 div.weather-image').append("<img id='theImg' style='height: 100%; width: 100%; position:absolute; top:5px' src='"+wCode+"'/>");
+        //$('#page5 div.weather-image').append("<img id='theImg' style='height: 100%; width: 100%; position:absolute; top:5px' src='"+wCode+"'/>");
 
 
       },
