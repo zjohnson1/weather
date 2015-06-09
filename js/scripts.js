@@ -52,7 +52,7 @@ if(navigator.geolocation){
           $('.five-day').text("");
           $('.five-day').append("<ul><li><span style='font-family: georgia, palatino;'>"+weather.forecast[0].day+"</span><ul><li>"+weather.forecast[0].text + ' High ' + weather.forecast[0].high + ', Low ' + weather.forecast[0].low+"</li></ul></li><li><span style='font-family: georgia, palatino;'>"+weather.forecast[1].day+"</span><ul><li>"+weather.forecast[1].text + ' High ' + weather.forecast[1].high + ', Low ' + weather.forecast[1].low+"</li></ul></li><li><span style='font-family: georgia, palatino;'>"+weather.forecast[2].day+"</span><ul><li>"+weather.forecast[2].text + ' High ' + weather.forecast[2].high + ', Low ' + weather.forecast[2].low+"</li></ul></li><li><span style='font-family: georgia, palatino;'>"+weather.forecast[3].day+"</span><ul><li>"+weather.forecast[3].text + ' High ' + weather.forecast[3].high + ', Low ' + weather.forecast[3].low+"</li></ul></li><li><span style='font-family: georgia, palatino;'>"+weather.forecast[4].day+"</span><ul><li>"+weather.forecast[4].text + ' High ' + weather.forecast[4].high + ', Low ' + weather.forecast[4].low+"</li></ul></li></ul>");
 
-
+          $('.five-day h3.wind').text("this works");
 
 
       },
