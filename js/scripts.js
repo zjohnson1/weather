@@ -47,7 +47,7 @@ if(navigator.geolocation){
           //hooks into page one image
           $('#page1 div.weather-image').append("<img id='theImg' style='height: 100%; width: 100%; position:absolute; top:5px' src='"+wCode+"'/>");
 
-          $('div.current-city').text(weather.city + " 5 day forcast");
+          $('.current-city').text(weather.city + " 5 day forcast");
 
 
 
