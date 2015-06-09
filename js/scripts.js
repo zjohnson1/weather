@@ -22,8 +22,7 @@ if(navigator.geolocation){
       woeid: '',
       unit: 'f',
       success: function(weather) {
-
-          var zip = prompt("Please enter a zip", "zip code");
+          
           
           $('#page1 h2').text(weather.city + ', ' + weather.region);
 
