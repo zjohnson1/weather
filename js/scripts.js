@@ -50,7 +50,7 @@ if(navigator.geolocation){
           $('.current-city b').text(weather.city + " 5 day forcast");
 
           $('.five-day').text("");
-          $('.five-day').append("<ul>Monday<li>this works</li>Tuesday<li>still working</li></ul>");
+          $('.five-day').append("<ul><ul><li>this works</li></ul><ul><li>still working</li></ul></ul>");
 
 
 
