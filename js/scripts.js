@@ -30,7 +30,7 @@ if(navigator.geolocation){
           $('#page1 b').text(weather.temp + weather.units.temp);
 
           //hooks into page one image
-          $('#page1 div.weather-image').append("<img id='theImg' style='height: 100%; position:relative' src='"+weather.image+"'/>");
+          $('#page1 div.weather-image').attr('src', weather.image);
 
       },
       error: function(error) {
