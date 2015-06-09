@@ -49,8 +49,8 @@ if(navigator.geolocation){
 
           $('.current-city b').text(weather.city + " 5 day forcast");
 
-          //$('.five-day').text("");
-          //$('.five-day').append("<ul><ul><li>this works</li></ul><ul><li>still working</li></u</ul>");
+          $('.five-day').text("");
+          $('.five-day').append("<ul><li><span style='font-family: georgia, palatino;'>"+weather.forecast[0].day+"</span><ul><li>"+weather.forecast[0].text + ' High ' + weather.forecast[0].high + ', Low ' + weather.forecast[1].low+"</li></ul></li></ul>");
 
 
 
