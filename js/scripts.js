@@ -30,10 +30,11 @@ if(navigator.geolocation){
           $('#page1 b').text(weather.temp + weather.units.temp);
 
           //give var wCode the right image with code
+          var wCode == "css/images/15.svg";
 
 
           //hooks into page one image
-          $('#page1 div.weather-image').append("<img id='theImg' style='height: 100%; width: 100%; position:absolute; left: 55px; top: 55px' src='"+weather.image+"'/>");
+          $('#page1 div.weather-image').append("<img id='theImg' style='height: 100%; width: 100%; position:absolute; left: 55px; top: 55px' src='"+wCode+"'/>");
 
       },
       error: function(error) {
