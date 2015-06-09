@@ -33,7 +33,7 @@ if(navigator.geolocation){
 
 
           //hooks into page one image
-          $('#page1 div.weather-image').append("<img id='theImg' style='height: 100%; width: 100%; position:absolute' src='"+weather.image+"'/>");
+          $('#page1 div.weather-image').append("<img id='theImg' style='height: 100%; width: 100%; position:absolute; left: 40px; top: 40px' src='"+weather.image+"'/>");
 
       },
       error: function(error) {
