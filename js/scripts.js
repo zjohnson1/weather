@@ -30,7 +30,18 @@ if(navigator.geolocation){
           $('#page1 b').text(weather.temp + weather.units.temp);
 
           //give var wCode the right image with code
-          var wCode = "css/images/15.svg";
+          var wCode;
+          if(weather.code == 4 || (weather.code >= 37 && weather.code <=39) || weather.code == 47){
+            wCode = "css/images/15.svg";
+          }else if(weather.code == 11 || weather.code == 12 || weather.code == 35){
+            wCode = "css/images/18.svg";
+          }else if(weather.code == 24){
+            wCode = "css/images/6.svg";
+          }else if(weather.code >= 27 && weather.code <= 30){
+            wCode = "css/images/8.svg";
+          }else{
+            wCode = "css/images/2.svg";
+          }
 
 
           //hooks into page one image
