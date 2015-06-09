@@ -63,8 +63,21 @@ if(navigator.geolocation){
           //hooks into page one temp
           $('#page3 b').text(weather.temp + weather.units.temp);
 
+          var wCode;
+          if(weather.code == 4 || (weather.code >= 37 && weather.code <=39) || weather.code == 47){
+            wCode = "css/images/15.svg";
+          }else if(weather.code == 11 || weather.code == 12 || weather.code == 35){
+            wCode = "css/images/18.svg";
+          }else if(weather.code == 24){
+            wCode = "css/images/6.svg";
+          }else if(weather.code >= 27 && weather.code <= 30){
+            wCode = "css/images/8.svg";
+          }else{
+            wCode = "css/images/2.svg";
+          }
+
           //hooks into page one image
-          $('#page3 div.weather-image').text("image");
+        $('#page3 div.weather-image').append("<img id='theImg' style='height: 100%; width: 100%; position:absolute; top:5px' src='"+wCode+"'/>");
 
       },
       error: function(error) {
