@@ -9,3 +9,7 @@ div#page6, div#page1{
 .ui-body-c, .ui-overlay-c{
 	background-image: url('images/nice_snow.png');
 }
+
+div#page4.ui-page.ui-body-c.ui-page-panel{
+	background-image: url('images/cheney.jpg');
+}
