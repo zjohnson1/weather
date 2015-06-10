@@ -6,3 +6,6 @@ div#page6, div#page1{
 	background-image: url('images/nice_snow.png');
 }
 
+.ui-body-c, .ui-overlay-c{
+	background-image: url('images/nice_snow.png');
+}
