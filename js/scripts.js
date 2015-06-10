@@ -54,7 +54,7 @@ if(navigator.geolocation){
 
           $('div#page6 h3.wind').text("Wind "+weather.wind.speed+ weather.units.speed + " "+ weather.wind.direction);
 
-          $('div#page6').css('background-image', 'url(css/images/nice_snow.png');
+          //$('div#page6').css('background-image', 'url(css/images/nice_snow.png');
 
       },
       error: function(error) {
@@ -181,6 +181,8 @@ if(navigator.geolocation){
       }
   });
 }
+
+$('body').css('background-image', 'url(css/images/sun.jpg)');
 
 
 
