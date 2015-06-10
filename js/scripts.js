@@ -182,7 +182,7 @@ if(navigator.geolocation){
   });
 }
 
-$('body').css('background-image', 'url(css/images/sun.jpg)');
+$('div.ui-content').css('background-image', 'url(css/images/sun.jpg)');
 
 
 
