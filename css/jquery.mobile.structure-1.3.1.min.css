@@ -10,6 +10,6 @@ div#page6, div#page1{
 	background-image: url('images/nice_snow.png');
 }
 
-div#page4.ui-page.ui-body-c.ui-page-panel{
+div.ui-content{
 	background-image: url('images/cheney.jpg');
 }
