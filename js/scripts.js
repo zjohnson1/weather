@@ -84,8 +84,15 @@ if(navigator.geolocation){
             wCode = "css/images/2.svg";
           }
 
-          //hooks into page one image
+          //hooks into page image
         $('#page3 div.weather-image').append("<img id='theImg' style='height: 100%; width: 100%; position:absolute; top:5px' src='"+wCode+"'/>");
+
+          $('.current-city b').text(weather.city + " 5 day forcast");
+
+          //$('.five-day').remove();
+          $('.five-day').append("<ul><li><span style='font-family: georgia, palatino;'>"+weather.forecast[0].day+"</span><ul><li>"+weather.forecast[0].text + ' High ' + weather.forecast[0].high + ', Low ' + weather.forecast[0].low+"</li></ul></li><li><span style='font-family: georgia, palatino;'>"+weather.forecast[1].day+"</span><ul><li>"+weather.forecast[1].text + ' High ' + weather.forecast[1].high + ', Low ' + weather.forecast[1].low+"</li></ul></li><li><span style='font-family: georgia, palatino;'>"+weather.forecast[2].day+"</span><ul><li>"+weather.forecast[2].text + ' High ' + weather.forecast[2].high + ', Low ' + weather.forecast[2].low+"</li></ul></li><li><span style='font-family: georgia, palatino;'>"+weather.forecast[3].day+"</span><ul><li>"+weather.forecast[3].text + ' High ' + weather.forecast[3].high + ', Low ' + weather.forecast[3].low+"</li></ul></li><li><span style='font-family: georgia, palatino;'>"+weather.forecast[4].day+"</span><ul><li>"+weather.forecast[4].text + ' High ' + weather.forecast[4].high + ', Low ' + weather.forecast[4].low+"</li></ul></li></ul>");
+
+          $('h3.wind').text("Wind "+wind.speed+ units.speed + " "+ wind.direction);
 
       },
       error: function(error) {
@@ -118,8 +125,14 @@ if(navigator.geolocation){
           }
 
           //hooks into page one image
-        //$('#page5 div.weather-image').append("<img id='theImg' style='height: 100%; width: 100%; position:absolute; top:5px' src='"+wCode+"'/>");
+        $('#page5 div.weather-image').append("<img id='theImg' style='height: 100%; width: 100%; position:absolute; top:5px' src='"+wCode+"'/>");
 
+          $('.current-city b').text(weather.city + " 5 day forcast");
+
+          //$('.five-day').remove();
+          $('.five-day').append("<ul><li><span style='font-family: georgia, palatino;'>"+weather.forecast[0].day+"</span><ul><li>"+weather.forecast[0].text + ' High ' + weather.forecast[0].high + ', Low ' + weather.forecast[0].low+"</li></ul></li><li><span style='font-family: georgia, palatino;'>"+weather.forecast[1].day+"</span><ul><li>"+weather.forecast[1].text + ' High ' + weather.forecast[1].high + ', Low ' + weather.forecast[1].low+"</li></ul></li><li><span style='font-family: georgia, palatino;'>"+weather.forecast[2].day+"</span><ul><li>"+weather.forecast[2].text + ' High ' + weather.forecast[2].high + ', Low ' + weather.forecast[2].low+"</li></ul></li><li><span style='font-family: georgia, palatino;'>"+weather.forecast[3].day+"</span><ul><li>"+weather.forecast[3].text + ' High ' + weather.forecast[3].high + ', Low ' + weather.forecast[3].low+"</li></ul></li><li><span style='font-family: georgia, palatino;'>"+weather.forecast[4].day+"</span><ul><li>"+weather.forecast[4].text + ' High ' + weather.forecast[4].high + ', Low ' + weather.forecast[4].low+"</li></ul></li></ul>");
+
+          $('h3.wind').text("Wind "+wind.speed+ units.speed + " "+ wind.direction);
 
       },
       error: function(error) {
@@ -154,7 +167,12 @@ if(navigator.geolocation){
           //hooks into page one image
         $('#page4 div.weather-image').append("<img id='theImg' style='height: 100%; width: 100%; position:absolute; top:5px' src='"+wCode+"'/>");
 
+          $('.current-city b').text(weather.city + " 5 day forcast");
 
+          //$('.five-day').remove();
+          $('.five-day').append("<ul><li><span style='font-family: georgia, palatino;'>"+weather.forecast[0].day+"</span><ul><li>"+weather.forecast[0].text + ' High ' + weather.forecast[0].high + ', Low ' + weather.forecast[0].low+"</li></ul></li><li><span style='font-family: georgia, palatino;'>"+weather.forecast[1].day+"</span><ul><li>"+weather.forecast[1].text + ' High ' + weather.forecast[1].high + ', Low ' + weather.forecast[1].low+"</li></ul></li><li><span style='font-family: georgia, palatino;'>"+weather.forecast[2].day+"</span><ul><li>"+weather.forecast[2].text + ' High ' + weather.forecast[2].high + ', Low ' + weather.forecast[2].low+"</li></ul></li><li><span style='font-family: georgia, palatino;'>"+weather.forecast[3].day+"</span><ul><li>"+weather.forecast[3].text + ' High ' + weather.forecast[3].high + ', Low ' + weather.forecast[3].low+"</li></ul></li><li><span style='font-family: georgia, palatino;'>"+weather.forecast[4].day+"</span><ul><li>"+weather.forecast[4].text + ' High ' + weather.forecast[4].high + ', Low ' + weather.forecast[4].low+"</li></ul></li></ul>");
+
+          $('h3.wind').text("Wind "+wind.speed+ units.speed + " "+ wind.direction);
 
       },
       error: function(error) {
